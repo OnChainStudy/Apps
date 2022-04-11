@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metamon
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: metamon
+  template:
+    metadata:
+      labels:
+        app: metamon
+    spec:
+      containers:
+      - image: ghcr.io/onchainstudy/metamon/metamon:20220410233548-cb2e34c319e0d241d8b04d5b807069fb453250fa
+        name: metamon
+        env:
+          - name: SALE_SECRET
+            valueFrom:
+              secretKeyRef:
+                name: metamon
+                key: sale_secret
+                optional: false
+        args: ["sale", "-s", "$(SALE_SECRET)"]
