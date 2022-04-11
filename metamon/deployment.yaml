@@ -24,3 +24,5 @@ spec:
                 key: sale_secret
                 optional: false
         args: ["sale", "-s", "$(SALE_SECRET)"]
+      imagePullSecrets:
+      - name: ghcr_ocs

@@ -1,0 +1,23 @@
+{
+  "kind": "SealedSecret",
+  "apiVersion": "bitnami.com/v1alpha1",
+  "metadata": {
+    "name": "ghcr_ocs",
+    "namespace": "default",
+    "creationTimestamp": null
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "name": "ghcr_ocs",
+        "namespace": "default",
+        "creationTimestamp": null
+      },
+      "type": "kubernetes.io/dockerconfigjson",
+      "data": null
+    },
+    "encryptedData": {
+      ".dockerconfigjson": "AgBWQX0Jw3CKM8MR5TPBI2eDUHRX9Ht9auQJf83aXRPZ15JyAI3gwKzOum5oNqcEf5AVMVxycm4OdC+HNymx0+A1HExaLc2XvJCnS7PE7rwGGuomkx6THMJ2VPEXDj6q1If5upbtrZL9byNUqlmb6uQ2k6PMZuuBrIdDTAFP/b+5AaXRttmrac07qMrC6sqZ4K0JazMlSP5PdTqZKtrCDvKRKuWZDARCsj49DzKfIkU6PtyYKs/ukvxYHuzCPX00myujhPrp3BIQMXMeGScdAvW85Mw6HEiRGFXH36LzVl7EHd2Wmub4Xkqjv0bayQtqlaraIssZnSAAjBHsXKq2FnH09ydjCc2oeglK/7XgPU1lIW6qwbXxC7QcOJbX/UlRzQeYbtl6j916Khg/6pT6Gt7iYrttRYbgSbMNAtrKDaMtYdiSSkcevPH0CZKpH28hGXOukBBwFAiIwjCx1E7K3LP0jigZuaFmsUaZRXmKaarnIMAIObzzgTIOpjzjjNbzmqTqMPA32YTjxGER2WVbNyK3iP0twWKpI0+iIF9UN0toDTYTSNdTV0HCKhf64BSoIS6kRE1MA+RSq0EWvMmCmOqRBDT3T0+O3VoiiOyizVAia2shxyhu2iW05Uu3S2u+mD1lDzWuBxXgI7ro5VOuBhPFZ6DW3kEOo3pr0LiqQzqsM9C459c4yiFoNtqixxBE3YB449te+px591fiDQRqH5xhKcGNfnL0d6yYRqyt8qfa8ylpQdGkcKC+nPBa4OHfTbFD7ObldYhx0mPX+GfA6MvuypSc4lt2ab1J7oGQHDl/E5NzmTGgI513DAQXv4irMsVFBdYdxzT7H8FjyIjeN2b3DbiY13f9DuGhphvRsjMVXDrc6roaATiZPc9WFW0="
+    }
+  }
+}
