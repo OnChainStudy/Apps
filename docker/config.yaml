@@ -2,14 +2,14 @@
   "kind": "SealedSecret",
   "apiVersion": "bitnami.com/v1alpha1",
   "metadata": {
-    "name": "ghcr_ocs",
+    "name": "ghcr-ocs",
     "namespace": "default",
     "creationTimestamp": null
   },
   "spec": {
     "template": {
       "metadata": {
-        "name": "ghcr_ocs",
+        "name": "ghcr-ocs",
         "namespace": "default",
         "creationTimestamp": null
       },
